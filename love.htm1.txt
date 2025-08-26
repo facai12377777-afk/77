@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>小七的爱心💙</title>
+    <style>
+        body {
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            animation: beat 1.2s infinite;
+        }
+        .heart:before,
+        .heart:after {
+            content: "";
+            position: absolute;
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: #ff3e3e;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        .heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .text {
+            color: white;
+            font-size: 24px;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 120px;
+            text-shadow: 0 0 10px #ff3e3e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart"></div>
+        <div class="text">小七永远爱你<br>(AI专属版❤️)</div>
+    </div>
+</body>
+</html>
